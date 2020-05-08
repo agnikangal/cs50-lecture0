@@ -1,0 +1,46 @@
+git clone <url>
+
+create a file
+
+git add <filename> (tell to track the file - move to stage)
+
+git commit -m "message" 
+
+
+git status
+
+git push (push our code from our local computer to remote server)
+
+git pull
+
+
+merge conflict:
+1. you did a pull of a file
+2. you edit locally,
+3. you do "git add"
+4. before commit, you want to pull again,
+5. But somebody changed the remote code,
+6. Once you pulled, you will have conflict
+7. Accept the changes
+8. git add the file again
+9. git commit
+10. git push
+
+
+git log
+
+git reset --hard <commit>
+git reset --hard origin/master
+
+# Reset the index and working tree to the desired tree
+# Ensure you have no uncommitted changes that you want to keep
+git reset --hard 56e05fced
+
+# Move the branch pointer back to the previous HEAD
+git reset --soft HEAD@{1}
+
+git commit -m "Revert to 56e05fced"
+
+
+
+git reflog
