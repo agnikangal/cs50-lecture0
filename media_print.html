@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media - Print</title>
+    <style>
+        @media Print{
+            .screen-only {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>This paragraph appears on the web page</p>
+    <p>This paragraph also appears on the web page</p>
+    <p class="screen-only">However, this paragraph doesn't get printed while the above does</p>
+</body>
+</html>
